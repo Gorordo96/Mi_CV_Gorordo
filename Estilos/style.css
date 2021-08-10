@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.presentacion {
+  background-color: #fff;
+  /*No trabajamos con pixeles porque es una medida fija de dimensiones
+  Trabajamos con las medidas heredadas de la clase body que contiene todas las anteriores
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height:240px
+  border-radius 10px*/
+  margin-top: 3em;
+  margin-left: 6em;
+  margin-right: 6em;
+  height: 15.02em;
+  border-radius: 0.6em;
+  box-shadow: 0.6em 0.6em 0.6em #404242;
+  border-style: groove;
+  border-color: rgb(2, 2, 10);
+  border-width: revert;
+}
+.presentacion__part-1{
+  width: 15.02em;
+  height: 15.02em;
+  background-color: rgb(235, 242, 250);
+  float:left;
+  border-radius: 0.6em;
+}
+.presentacion__part-1--img{
+  width: 12em;
+  margin-top: 1.8em;
+  margin-left: 1.5em;
+  border-radius: 50%;
+  filter:brightness(1.4);
+}
+.presentacion__part-2{
+float: left;
+margin-top: 1.2em;
+margin-left: 0.5em;
+font-size: 1.2em;
+font-family: 'Open Sans', sans-serif;
+}
+.presentacion__part-2--img{
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.presentacion__part-3{
+float: left;
+margin-left: 1.5em;
+width: 15.02em;
+height: 15.02em;
+}
+
+#presentacion__part-3--Line-Sup{
+margin-top: 3em;
+height: 0.2em;
+background-color: black;
+}
+#presentacion__part-3--Line-Inf{
+margin-top: 1em;
+height: 0.2em;
+background-color:black;
+}
+
+.presentacion__part-3--img{
+margin-top: 1em;
+margin-bottom: 0.5em;
+margin-right: 0.5em;
+width: 3em;
+height: :3em;
+}
+.pag {
+  background-color: rgb(66, 122, 161);
+  width: auto;
+  height: auto;
+}
