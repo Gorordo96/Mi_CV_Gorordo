@@ -89,7 +89,7 @@ transition:width 0.3s, height 0.3s;
   height: 3.2em;
 }
 
-.Data{
+.data{
   display: inline-flex;
   flex-direction: column;
   background-color: #fff;
@@ -104,7 +104,7 @@ transition:width 0.3s, height 0.3s;
   border-width: revert;
 }
 
-.Data__Formacion{
+.data__formacion{
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
@@ -118,14 +118,14 @@ transition:width 0.3s, height 0.3s;
   height: 3em;
 }
 
-.Data-title{
+.data-title{
   padding-top: 0.5em;
   text-align: center;
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
-
 }
-.Data__ProyTrab{
+
+.data__proytrab{
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
@@ -139,7 +139,7 @@ transition:width 0.3s, height 0.3s;
   height: 3em;
 }
 
-.Data__ManejSoft{
+.data__manejsoft{
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
