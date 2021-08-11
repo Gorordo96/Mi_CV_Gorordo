@@ -96,6 +96,7 @@ transition:width 0.3s, height 0.3s;
   margin-left: 6em;
   margin-right: 6em;
   width: 49em;
+  height: 15em;
   border-radius: 0.6em;
   box-shadow: 0.6em 0.6em 0.6em #404242;
   border-style: solid;
@@ -104,15 +105,52 @@ transition:width 0.3s, height 0.3s;
 }
 
 .Data__Formacion{
-
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5em;
+  border-top-style: hidden;
+  border-bottom-style:solid;
+  border-bottom-color: rgb(121, 121, 126);
+  box-shadow: .6em .6em .9em rgb(121, 121, 126);
+  background-color: #fff;
+  display: inline-block;
+  height: 3em;
 }
 
-.Data__ProyTrab{
+.Data-title{
+  padding-top: 0.5em;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
 
+}
+.Data__ProyTrab{
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5em;
+  border-top-style: hidden;
+  border-bottom-style:solid;
+  border-bottom-color: rgb(121, 121, 126);
+  box-shadow: .6em .6em .9em rgb(121, 121, 126);
+  background-color: #fff;
+  display: inline-block;
+  height: 3em;
 }
 
 .Data__ManejSoft{
-
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5em;
+  border-top-style: hidden;
+  border-bottom-style:solid;
+  border-bottom-color: rgb(121, 121, 126);
+  box-shadow: .6em .6em .9em rgb(121, 121, 126);
+  background-color: #fff;
+  display: inline-block;
+  height: 3em;
 }
 
 .pag {
