@@ -118,6 +118,7 @@ transition:width 0.3s, height 0.3s;
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  display: inline-block;
 }
 
 .data__formacion{
