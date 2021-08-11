@@ -105,17 +105,19 @@ transition:width 0.3s, height 0.3s;
 }
 
 .data--img{
+  top:0.27em;
   width: 1.2em;
   height: 1.2em;
   position: relative;
-  left: 10em;
+  left: 9em;
 }
 
 .data-title{
-  padding-top: 0.5em;
-  text-align: center;
+  top: 0.2em;
+  left:13em;
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
 .data__formacion{
