@@ -112,6 +112,14 @@ transition:width 0.3s, height 0.3s;
   left: 9em;
 }
 
+#data--img-formacad{
+  top:0.27em;
+  width: 1.2em;
+  height: 1.2em;
+  position: relative;
+  left: 8.3em;
+}
+
 .data-title{
   top: 0.2em;
   left:13em;
