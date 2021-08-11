@@ -104,6 +104,20 @@ transition:width 0.3s, height 0.3s;
   border-width: revert;
 }
 
+.data--img{
+  width: 1.2em;
+  height: 1.2em;
+  position: relative;
+  left: 10em;
+}
+
+.data-title{
+  padding-top: 0.5em;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .data__formacion{
   margin-top: 1em;
   margin-left: 1em;
@@ -116,13 +130,6 @@ transition:width 0.3s, height 0.3s;
   background-color: #fff;
   display: inline-block;
   height: 3em;
-}
-
-.data-title{
-  padding-top: 0.5em;
-  text-align: center;
-  font-size: 1.3em;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .data__proytrab{
