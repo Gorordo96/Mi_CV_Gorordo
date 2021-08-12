@@ -141,6 +141,7 @@ transition:width 0.3s, height 0.3s;
   background-color: #fff;
   display: inline-block;
   height: 3em;
+  cursor: pointer;
 }
 
 #data__formato--formacion{
