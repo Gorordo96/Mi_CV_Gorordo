@@ -4,13 +4,6 @@
   display: inline-flex;
   flex-direction: row;
   background-color: #fff;
-  /*No trabajamos con pixeles porque es una medida fija de dimensiones
-  Trabajamos con las medidas heredadas de la clase body que contiene todas las anteriores
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-  height:240px
-  border-radius 10px*/
   margin-top: 3em;
   margin-left: 6em;
   margin-right: 6em;
@@ -22,6 +15,7 @@
   border-color: rgb(2, 2, 10);
   border-width: revert;
 }
+
 .presentacion__part-1{
   display: inline-block;
   width: 15.02em;
@@ -29,6 +23,7 @@
   background-color: rgb(235, 242, 250);
   border-radius: 0.6em;
 }
+
 .presentacion__part-1--img{
   width: 12em;
   margin-top: 1.8em;
@@ -36,6 +31,7 @@
   border-radius: 50%;
   filter:brightness(1.4);
 }
+
 .presentacion__part-2{
 display: inline-block;
 padding-top: 3em;
@@ -49,6 +45,7 @@ height: 14.6em;
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
 }
+
 .presentacion__part-2--img{
   width: 1em;
   height: 1em;
@@ -69,6 +66,7 @@ margin-top: 4.2em;
 height: 0.2em;
 background-color: black;
 }
+
 #presentacion__part-3--Line-Inf{
 margin-top: 0.2em;
 height: 0.2em;
@@ -109,15 +107,18 @@ transition:width 0.3s, height 0.3s;
   width: 1.2em;
   height: 1.2em;
   position: relative;
-  left: 9em;
 }
 
-#data--img-formacad{
-  top:0.27em;
-  width: 1.2em;
-  height: 1.2em;
-  position: relative;
-  left: 8.3em;
+#data--img-1{
+  left: 7.8em;
+}
+
+#data--img-2{
+  left: 8.62em;
+}
+
+#data--img-3{
+  left: 8.77em;
 }
 
 .data-title{
