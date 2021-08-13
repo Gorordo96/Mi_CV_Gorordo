@@ -155,7 +155,8 @@ transition:width 0.3s, height 0.3s;
 }
 
 .pag {
-  background-color: rgb(66, 122, 161);
+  /*rgb(66, 122, 161) */
+  background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
   width: auto;
-  height: auto;
+  height: 100vh;
 }
