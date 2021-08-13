@@ -139,6 +139,7 @@ transition:width 0.3s, height 0.3s;
   display: inline-block;
   height: 3em;
   cursor: pointer;
+  text-align: center;
 }
 
 #data__formato--formacion{
