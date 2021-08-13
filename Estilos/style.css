@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 .presentacion {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   background-color: #fff;
-  margin-top: 3em;
-  margin-left: 6em;
-  margin-right: 6em;
-  margin-bottom: 3em;
+  margin:auto;
+  margin-top:5em;
+  margin-bottom:4em;
   height: 15.02em;
   border-radius: 0.6em;
   box-shadow: 0.6em 0.6em 0.6em #404242;
@@ -88,11 +87,10 @@ transition:width 0.3s, height 0.3s;
 }
 
 .data{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin-left: 6em;
-  margin-right: 6em;
+  margin:auto;
   height: 15em;
   width: 49em;
   border-radius: 0.6em;
