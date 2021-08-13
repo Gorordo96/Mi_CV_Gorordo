@@ -3,17 +3,13 @@
 .presentacion {
   display: inline-flex;
   flex-direction: row;
+  justify-content: flex-start;
   background-color: #fff;
-  margin-top: 3em;
-  margin-left: 6em;
-  margin-right: 6em;
-  margin-bottom: 2em;
   height: 15.02em;
   border-radius: 0.6em;
   box-shadow: 0.6em 0.6em 0.6em #404242;
   border-style: solid;
   border-color: rgb(2, 2, 10);
-  border-width: revert;
 }
 
 .presentacion__part-1{
@@ -99,7 +95,6 @@ transition:width 0.3s, height 0.3s;
   box-shadow: 0.6em 0.6em 0.6em #404242;
   border-style: solid;
   border-color: rgb(2, 2, 10);
-  border-width: revert;
 }
 
 .data--img{
@@ -110,7 +105,7 @@ transition:width 0.3s, height 0.3s;
 }
 
 #data--img-1{
-  left: 7.8em;
+  left: 8.3em;
 }
 
 #data--img-2{
@@ -135,6 +130,8 @@ transition:width 0.3s, height 0.3s;
   margin-right: 1em;
   border-radius: 5em;
   border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: ridge;
   border-bottom-style:solid;
   border-bottom-color: rgb(121, 121, 126);
   box-shadow: 0.6em 0.6em 0.9em rgb(121, 121, 126);
@@ -159,4 +156,12 @@ transition:width 0.3s, height 0.3s;
   background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
   width: auto;
   height: 100vh;
+}
+
+.pag-section{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+
 }
