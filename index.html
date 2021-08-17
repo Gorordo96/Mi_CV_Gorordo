@@ -11,9 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="/Mi_CV_Gorordo/Estilos/style.css">
 	</head>
 <!-- Body = Estructura visible de la pagina -->
-	<body class="pag">
+	<body id="pag" class="pag">
 		<!-- Seccion de presentacion personal -->
 		<div class="pag-section">
+
 			<section class="presentacion">
 				<div class="presentacion__part-1">
 						<img src="/Mi_CV_Gorordo/Img/Foto_Perfil.jpg"  alt="Lucas Gorordo" class="presentacion__part-1--img">
@@ -21,7 +22,7 @@
 				<div class="presentacion__part-2">
 						<h4 class="presentacion__part-2--text"> <img class="presentacion__part-2--img" src="/Mi_CV_Gorordo/Img/usuario.svg" alt="icono usuario">Lucas Gorordo </h4>
 						<h4 class="presentacion__part-2--text"> <img class="presentacion__part-2--img" src="/Mi_CV_Gorordo/Img/correo-electronico.svg" alt="icono email">gorordo96@gmail.com </h4>
-						<h4 class="presentacion__part-2--text"> <img class="presentacion__part-2--img" src="/Mi_CV_Gorordo/Img/ubicacion.svg" alt="icono ubicacion">Argentina </h4>
+						<h4 class="presentacion__part-2--text"><img class="presentacion__part-2--img" src="/Mi_CV_Gorordo/Img/ubicacion.svg" alt="icono ubicacion">Argentina </h4>
 				</div>
 				<div class="presentacion__part-3">
 					<hr id="presentacion__part-3--Line-Sup">
@@ -33,32 +34,79 @@
 				</div>
 			</section>
 		</div>
-		<!-- <h2><script type="text/javascript"src="Script/codigo.js"></script></h2> -->
+
 		<div class="pag-section">
-			<section class="data">
+
+			<section id="Data" class="Data">
 				<!-- Seccion de datos personales -->
-				<div id="data__formato--formacion" class="data__formato">
-					<h3 class="data-title">
-						Formacion Academica
-						<img id="data--img-1" class="data--img" src="/Mi_CV_Gorordo/Img/flecha-hacia-abajo-para-navegar.svg" alt="flecha hacia abajo para navergar">
+				<div id="Data__Formato--Formacion" class="Data__Formato">
+				<h3 class="Data-title">Formacion Academica
+						<img id="Data--img-1" class="Data--img" src="/Mi_CV_Gorordo/Img/flecha-hacia-abajo-para-navegar.svg" alt="flecha hacia abajo para navergar">
 					</h3>
 				</div>
+				<!-- Informacion personal academica -->
+				<div id="Data__Formacion-inf"class="Data-inf">
+					<div class="Data-section">
+						<h3 class="Data-section-title"> Formacion Secundaria </h3>
+						<p class="Data-section-info">
+						2013 - <b>"Bachiller en Economía y Admnistración"</b>, titulo obtenido en el instituto adscripto San Buenaventura.<br><u><i>Egresado con promedio general de 8.52</i></u><br>
+						</p>
+					</div>
+					<div class="Data-section">
+						<h3 class="Data-section-title"> Formacion Universitaria </h3>
+						<p class="Data-section-info">
+							Estudiante desde 2014 y en la actualidad de la carrera <b>Ingeniería en Telecomunicaciones</b>, Facultad de Ingeniería, Universidad Nacional de Río Cuarto (UNRC).<br><u><i>Materias Aprobadas:42 de 43.<br>Porcentaje de horas aprobadas:91,95%.<br>Promedio a la fecha (julio 2021):9.09 (con y sin aplazo)</u></i>
+						</p>
+					</div>
+				</div>
 
-				<div id="data__formato--proytrab" class="data__formato">
-					<h3 class="data-title">
+				<div id="Data__Formato--ProyTrab" class="Data__Formato">
+					<h3 class="Data-title">
 						Proyectos y trabajos
-						<img id="data--img-2" class="data--img" src="/Mi_CV_Gorordo/Img/flecha-hacia-abajo-para-navegar.svg" alt="flecha hacia abajo para navergar">
+						<img id="Data--img-2" class="Data--img" src="/Mi_CV_Gorordo/Img/flecha-hacia-abajo-para-navegar.svg" alt="flecha hacia abajo para navergar">
 					</h3>
 				</div>
+				<!-- Proyectos y Trabajos -->
+				<div id="Data__ProyTrab-inf"class="Data-inf">
+					<div class="Data-section-column">
+							<h3 class="Data-section-title-2">2021 Pasantias y practicas profesionales en Ascentio Technologies S.A.</h3>
+							<div >
 
-				<div id="data__formato--manejsoft" class="data__formato">
-					<h3 class="data-title">
+
+
+							</div>
+							<h3 class="Data-section-title-2">2019 - 2021 Ayudantia de segunda dentro del departamento de Telecomunicaciones para las asignaturas "SISTEMAS Y SEÑALES 1" y "SISTEMAS Y SEÑALES 2"</h3>
+							<div >
+
+							</div>
+							<h3 class="Data-section-title-2">2019 Colaborador en curso de capacitacion "Primeros pasos de programacion utilizando un entorno arduino" destinado a docentes de nivel medio y alumnos de 4to,5to y 6to grado del nivel primario del instituto privado Galileo Galilei, de la ciudad de Río Cuarto</h3>
+							<div >
+
+							</div>
+							<h3 class="Data-section-title-2">2018 Becario del proyecto "Sistema embebido aplicado a la deteccion y alerta de incendios para implementar en sistemas de aviones no tripulados" a cargo del directo PRIMO, Damián de la facultad de ingeniería. </h3>
+							<div >
+
+							</div>
+							<h3 class="Data-section-title-2">2017 Integrante del grupo de sistemas de Tiempo Real, dependiente del departamento de Telecomunicaciones.</h3>
+					</div>
+
+
+				</div>
+
+				<div id="Data__Formato--ManejSoft" class="Data__Formato">
+					<h3 class="Data-title">
 						manejo de software
-						<img id="data--img-3" class="data--img" src="/Mi_CV_Gorordo/Img/flecha-hacia-abajo-para-navegar.svg" alt="flecha hacia abajo para navergar">
+						<img id="Data--img-3" class="Data--img" src="/Mi_CV_Gorordo/Img/flecha-hacia-abajo-para-navegar.svg" alt="flecha hacia abajo para navergar">
 					</h3>
+				</div>
+				<!-- Manejo de software -->
+				<div id="Data__ManejSoft-inf" class="Data-inf">
+
 				</div>
 			</section>
 		</div>
+
+<script type="text/javascript" src="/Mi_CV_Gorordo/Script/codigo.js"></script>
 	</body>
 
 </html>

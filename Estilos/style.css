@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+/*margin-top: 3em;
+margin-left: 6em;
+margin-right: 6em;
+margin-bottom: 3em;
+justify-content: flex-start;*/
 .presentacion {
   display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #fff;
   margin-left: 6em;
   margin-right: 6em;
+  background-color: #fff;
   height: 15.02em;
   border-radius: 0.6em;
-  box-shadow: 0.6em 0.6em 0.6em #404242;
+  box-shadow: 0.6em 0.6em 0.6em #e3ffff;
   border-style: solid;
   border-color: rgb(2, 2, 10);
 }
@@ -44,7 +48,6 @@ height: 14.6em;
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
 }
-
 .presentacion__part-2--img{
   width: 1em;
   height: 1em;
@@ -86,40 +89,43 @@ transition:width 0.3s, height 0.3s;
   height: 3.2em;
 }
 
-.data{
+.Data{
   display: inline-flex;
   flex-direction: column;
   background-color: #fff;
   margin-left: 6em;
   margin-right: 6em;
+  /*El parametro a continuacion debe modificarse para hacer la lista desplegable */
+  /*Parametro sin modificaciones en las secciones 15em */
   height: 15em;
   width: 49em;
   border-radius: 0.6em;
-  box-shadow: 0.6em 0.6em 0.6em #404242;
+  box-shadow: 0.6em 0.6em 0.6em #e3ffff;
   border-style: solid;
   border-color: rgb(2, 2, 10);
+  transition: height 0.8s;
 }
 
-.data--img{
+.Data--img{
   top:0.27em;
   width: 1.2em;
   height: 1.2em;
   position: relative;
 }
 
-#data--img-1{
+#Data--img-1{
   left: 8.3em;
 }
 
-#data--img-2{
+#Data--img-2{
   left: 8.62em;
 }
 
-#data--img-3{
+#Data--img-3{
   left: 8.77em;
 }
 
-.data-title{
+.Data-title{
   top: 0.2em;
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
@@ -127,7 +133,65 @@ transition:width 0.3s, height 0.3s;
   display: inline-block;
 }
 
-.data__formato{
+.Data-inf{
+  display: inline-flex;
+  overflow: hidden;
+  transition: height 0.8s,margin 0.4s,border-style 0.8s,opacity 0.8s;
+  margin:0em;
+}
+.Data-section{
+  width: 50%;
+  height: 100%;
+  border-style: none;
+  margin: 2em;
+  text-align: justify;
+}
+
+.Data-section-column{
+  margin: 2em;
+  width: auto;
+  height: 25%;
+  text-align: center;
+}
+
+.Data-section-title{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.Data-section-title-2{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+.Data-section-info{
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+}
+
+#Data__Formacion-inf{
+  /*El parametro a continuacion debe modificarse para hacer la lista desplegable */
+  height: 0em;
+  opacity: 0;
+  flex-direction: row;
+}
+#Data__ProyTrab-inf{
+  /*El parametro a continuacion debe modificarse para hacer la lista desplegable */
+  height: 0em;
+  opacity: 0;
+  flex-direction: column;
+}
+#Data__ManejSoft-inf{
+  /*El parametro a continuacion debe modificarse para hacer la lista desplegable */
+  height: 0em;
+  opacity: 0;
+}
+
+
+
+.Data__Formato{
   margin-left: 1em;
   margin-right: 1em;
   border-radius: 5em;
@@ -136,7 +200,7 @@ transition:width 0.3s, height 0.3s;
   border-right-style: ridge;
   border-bottom-style:solid;
   border-bottom-color: rgb(121, 121, 126);
-  box-shadow: 0.6em 0.6em 0.9em rgb(121, 121, 126);
+  box-shadow: .6em .6em .9em rgb(121, 121, 126);
   background-color: #fff;
   display: inline-block;
   height: 3em;
@@ -144,23 +208,27 @@ transition:width 0.3s, height 0.3s;
   text-align: center;
 }
 
-#data__formato--formacion{
+#Data__Formato--Formacion{
   margin-top: 1.6em;
 }
-#data__formato--proytrab{
+#Data__Formato--ProyTrab{
   margin-top: 1em;
 }
-#data__formato--manejsoft{
+#Data__Formato--ManejSoft{
   margin-top: 1em;
 }
 
 .pag {
   /*rgb(66, 122, 161) */
   background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
-  width: auto;
+  background-image: url(/Img/Fondo_Pantalla.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  width: 100vw;
   height: 100vh;
+  transition: heigth 0.8s;
 }
-
 .pag-section{
   display: inline-block;
   text-align: center;
