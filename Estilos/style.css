@@ -221,7 +221,7 @@ font-size: 1em;
 .pag {
   /*rgb(66, 122, 161) */
   background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
-  background-image: url(/Img/Fondo_Pantalla.jpg);
+  background-image: url(/Mi_CV_Gorordo/Img/Fondo_Pantalla.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
