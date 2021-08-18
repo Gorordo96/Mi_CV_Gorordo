@@ -3,7 +3,7 @@
 .pag {
   /*rgb(66, 122, 161) */
   background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
-  background-image: url(/Mi_CV_Gorordo/Img/Fondo_Pantalla.jpg);
+  background-image: url(/Mi_CV_Gorordo/Img/Fondo_Pantalla.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -71,22 +71,21 @@ height: 14.6em;
 margin-right: 1.4em;
 }
 
+.presentacion_part-3-Lin{
+  height: 0.2em;
+  background-color: black;
+  animation-name: barradeslizante;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
 #presentacion__part-3--Line-Sup{
 margin-top: 4.2em;
-height: 0.2em;
-background-color: black;
-animation-name: barradeslizante;
-animation-duration: 2.5s;
-animation-fill-mode: both;
 }
 
 #presentacion__part-3--Line-Inf{
 margin-top: 0.2em;
-height: 0.2em;
-background-color:black;
-animation-name: barradeslizante;
-animation-duration: 2.5s;
-animation-fill-mode: both;
 }
 
 @keyframes barradeslizante {
