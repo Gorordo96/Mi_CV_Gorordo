@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-/*margin-top: 3em;
-margin-left: 6em;
-margin-right: 6em;
-margin-bottom: 3em;
-justify-content: flex-start;*/
+
+.pag {
+  /*rgb(66, 122, 161) */
+  background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
+  background-image: url(/Mi_CV_Gorordo/Img/Fondo_Pantalla.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  transition: heigth 0.8s;
+}
+
 .presentacion {
   display: inline-flex;
   flex-direction: row;
@@ -267,17 +275,6 @@ font-size: 1em;
   margin-top: 1em;
 }
 
-.pag {
-  /*rgb(66, 122, 161) */
-  background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
-  background-image: url(/Mi_CV_Gorordo/Img/Fondo_Pantalla.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
-  transition: heigth 0.8s;
-}
 .pag-section{
   display: inline-block;
   text-align: center;
