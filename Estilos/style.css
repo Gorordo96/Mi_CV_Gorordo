@@ -67,13 +67,33 @@ margin-right: 1.4em;
 margin-top: 4.2em;
 height: 0.2em;
 background-color: black;
+animation-name: barradeslizante;
+animation-duration: 2.5s;
+animation-fill-mode: both;
 }
 
 #presentacion__part-3--Line-Inf{
 margin-top: 0.2em;
 height: 0.2em;
 background-color:black;
+animation-name: barradeslizante;
+animation-duration: 2.5s;
+animation-fill-mode: both;
 }
+
+@keyframes barradeslizante {
+  0% {
+    width:0%;
+  }
+  33% {
+    width:100%;
+  }
+  66% {
+    width: 0%;
+  }
+  100% {
+    width:100%;
+  }
 
 .presentacion__part-3--img{
 margin-top: 1.4em;
