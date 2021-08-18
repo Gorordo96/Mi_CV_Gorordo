@@ -40,7 +40,7 @@ function accordeon (idelement,incremento_size) {
 }
 //definimos variable para trabajar con dimensiones de las cajas
 let base_seccion=240;
-let dimension_box=[250,300,300];
+let dimension_box=[250,1670,300];
 //definimos variable global para trabajar con dimensiones
 // dimension_seccion =[000,001,010,011,100,101,110,111]
 var dimension_seccion=[base_seccion,base_seccion + dimension_box[2],base_seccion + dimension_box[1],base_seccion + dimension_box[1] + dimension_box[2],base_seccion + dimension_box[0],base_seccion + dimension_box[0] + dimension_box[2],base_seccion + dimension_box[0] + dimension_box[1],base_seccion + dimension_box[0] + dimension_box[1] + dimension_box[2]];
