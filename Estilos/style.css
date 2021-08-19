@@ -61,6 +61,22 @@ height: 14.6em;
   height: 1em;
   margin-right: 0.5em;
   object-fit: cover;
+  animation-name: rebote;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rebote {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+
 }
 
 .presentacion__part-3{
