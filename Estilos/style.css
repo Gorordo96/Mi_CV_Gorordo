@@ -4,6 +4,7 @@
   /*rgb(66, 122, 161) */
   background: linear-gradient(to top,rgb(45, 64, 79),rgb(70, 136, 184));
   background-image: url(/Mi_CV_Gorordo/Img/Fondo-Pantalla.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -56,6 +57,8 @@ height: 14.6em;
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
 }
+
+
 .presentacion__part-2--img{
   width: 1em;
   height: 1em;
@@ -91,16 +94,22 @@ margin-right: 1.4em;
   height: 0.2em;
   background-color: black;
   animation-name: barradeslizante;
-  animation-duration: 2.5s;
+  animation-duration: 4s;
   animation-fill-mode: both;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease;
+
 }
 
 #presentacion__part-3--Line-Sup{
 margin-top: 4.2em;
+
 }
 
 #presentacion__part-3--Line-Inf{
 margin-top: 0.2em;
+
 }
 
 @keyframes barradeslizante {
@@ -116,9 +125,7 @@ margin-top: 0.2em;
   100% {
     width:100%;
   }
-  }
-
-
+}
 .presentacion__part-3--img{
 margin-top: 1.4em;
 margin-bottom: 1em;
@@ -155,10 +162,13 @@ transition:width 0.3s, height 0.3s;
   width: 1.2em;
   height: 1.2em;
   position: relative;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
 }
 
 #Data--img-1{
   left: 8.3em;
+
 }
 
 #Data--img-2{
@@ -277,6 +287,7 @@ font-size: 1em;
   height: 3em;
   cursor: pointer;
   text-align: center;
+  transition: background-color 0.1s;
 }
 
 #Data__Formato--Formacion{
@@ -289,10 +300,10 @@ font-size: 1em;
   margin-top: 1em;
 }
 
+
 .pag-section{
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin-top: 5%;
-
+  margin-top: 3%;
 }
