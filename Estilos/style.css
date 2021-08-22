@@ -46,7 +46,7 @@
 .presentacion__part-2{
 display: inline-block;
 text-align: initial;
-padding-top: 3em;
+padding-top: 3.5em;
 padding-left:0.5em;
 width: 16.2em;
 height: 14.6em;
@@ -54,7 +54,7 @@ height: 14.6em;
 
 .presentacion__part-2--text{
   margin-bottom: 2em;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: 'Open Sans', sans-serif;
 }
 
