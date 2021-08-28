@@ -67,9 +67,7 @@ let tam_pagStyle= window.getComputedStyle(document.getElementById('pag'));
 let tam_pag= parseFloat(tam_pagStyle.getPropertyValue('height'));
 if (tam_pag > footDim.top){
     footElement.style.top=`${(tam_pag- (footDim.top + footDim.height))}px`;
-} else{
-    footElement.style.top="0px";
-}
+} 
 }
 
 //___________________________________________________________________________________________
