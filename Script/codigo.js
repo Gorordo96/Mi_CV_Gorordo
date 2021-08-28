@@ -1,6 +1,6 @@
-//Este codigo tiene como proposito generar un accordeon dinamico.
+
 //______________________________________________________________________________
-//Creamos cada una de las funciones a ejecutar:
+//Funcion para generar un accordeon dinamico.
 function accordeon (idelement,incremento_size) {
 
 //Datos de la seccion Data
@@ -40,7 +40,8 @@ function accordeon (idelement,incremento_size) {
   return 0;
 }
 }
-
+//______________________________________________________________________________
+//Funcion para cambiar de color los botones del accordeon.
 function changecolor(idelement,color,state) {
   if (state == 1) {
     idelement.style.setProperty('background-color',color);
@@ -48,7 +49,8 @@ function changecolor(idelement,color,state) {
     idelement.style.setProperty('background-color',"rgb(255,255,255)");
   }
 }
-
+//______________________________________________________________________________
+//Funcion para rotar los iconos de los botones del accordeon.
 function rotateImg(idelement,state) {
   if (state == 1) {
     idelement.style.transform = "rotate(180deg)";
@@ -56,8 +58,23 @@ function rotateImg(idelement,state) {
     idelement.style.transform = "rotate(0deg)";
   }
 }
+//______________________________________________________________________________
+//Funcion que permite posicionar correctamente el footer.
+function dimFooter(){
+let footElement= document.getElementById("foot");
+let footDim = footElement.getBoundingClientRect();
+let tam_pagStyle= window.getComputedStyle(document.getElementById('pag'));
+let tam_pag= parseFloat(tam_pagStyle.getPropertyValue('height'));
+if (tam_pag > footDim.top){
+    footElement.style.top=`${(tam_pag- (footDim.top + footDim.height))}px`;
+} else{
+    footElement.style.top="0px";
+}
+}
 
 //___________________________________________________________________________________________
+// Ajustamos el footer..
+dimFooter();
 //definimos variable para trabajar con dimensiones de las cajas
 let base_seccion=240;
 let dimension_box=[250,1670,340];
