@@ -13,6 +13,13 @@
   transition: heigth 0.8s;
 }
 
+.pag-section{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
+}
+
 .presentacion {
   display: inline-flex;
   flex-direction: row;
@@ -305,9 +312,22 @@ font-size: 1em;
 }
 
 
-.pag-section{
-  display: inline-block;
-  text-align: center;
+
+
+.footer{
+  margin-top: 5em;
+  position: relative;
+  display: block;
+  background-color: black;
   width: 100%;
-  margin-top: 3%;
+  height: 200px;
+  text-align: center;
+}
+
+.footer-text{
+  display: inline-block;
+  margin-top:100px;
+  color:#fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
 }
