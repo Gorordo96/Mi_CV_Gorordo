@@ -38,7 +38,11 @@ function accordeon (idelement,incremento_size) {
   idelement.style.setProperty("height",(`${elementStyleWidth}`+"px"));
   idelement.style.setProperty("opacity","0");
   return 0;
+}else {
+
+  return 2;
 }
+
 }
 //______________________________________________________________________________
 //Funcion para cambiar de color los botones del accordeon.
@@ -73,38 +77,82 @@ if ((tam_pag > footDim.top) && ((tam_pag- (footDim.top + footDim.height)) > 0)){
 }
 }
 
+function dimaccordeon(state){
+
+  if ( (state[0] == 1) && (state[1] == 1) && (state[2] == 1)) {
+    let counter_form_Acad = 0;
+    let counter_Proy_Trab = 0;
+    let counter_Manej_Soft = 0;
+    let aux;
+    let element_Form_Acad = document.getElementById("Data__Formacion-inf");
+    let tam_element_Form_Acad = element_Form_Acad.getElementsByClassName('Data-section');
+
+    for (var i = 0; i < tam_element_Form_Acad.length; i++) {
+      counter_form_Acad = counter_form_Acad + parseInt(window.getComputedStyle(tam_element_Form_Acad[i]).getPropertyValue("height"));
+    }
+
+    let element_Proy_Trab = document.getElementById("Data__ProyTrab-inf");
+    let tam_element_Proy_Trab_title = element_Proy_Trab.getElementsByClassName("Data-section-title-2");
+    let tam_element_Proy_Trab_multimed = element_Proy_Trab.getElementsByClassName("Data-section-multimedia");
+    for (var j = 0; j < tam_element_Proy_Trab_title.length; j++) {
+      counter_Proy_Trab = counter_Proy_Trab + parseInt(window.getComputedStyle(tam_element_Proy_Trab_title[j]).getPropertyValue("height"));
+    }
+
+    for (var k = 0; k < tam_element_Proy_Trab_multimed.length; k++) {
+      counter_Proy_Trab = counter_Proy_Trab + parseInt(window.getComputedStyle(tam_element_Proy_Trab_multimed[k]).getPropertyValue("height"));
+    }
+
+    let element_Manej_Soft = document.getElementById("Data__ManejSoft-inf");
+    let tam_element_Manej_Soft = element_Manej_Soft.getElementsByClassName("Data-section-column-Row");
+
+    for (var z = 0; z < tam_element_Manej_Soft.length; z++) {
+      counter_Manej_Soft = counter_Manej_Soft + parseInt(window.getComputedStyle(tam_element_Manej_Soft[z]).getPropertyValue("height"));
+    }
+    
+    return [counter_form_Acad + 250,counter_Proy_Trab + 150 ,counter_Manej_Soft + 80];
+  } else {
+
+    return [0,0,0];
+  }
+}
+
+
 //___________________________________________________________________________________________
 // Ajustamos el footer..
 dimFooter();
+
 //definimos variable para trabajar con dimensiones de las cajas
 let base_seccion=240;
 let dimension_box=[250,1670,340];
+let state_button=[1,1,1];
+// Aplicamos la funcion que nos dice que medidas son necesarias para desplegar el accordeon
+dimension_box = dimaccordeon(state_button);
+
 //definimos variable global para trabajar con dimensiones
 // dimension_seccion =[000,001,010,011,100,101,110,111]
 var dimension_seccion=[base_seccion,base_seccion + dimension_box[2],base_seccion + dimension_box[1],base_seccion + dimension_box[1] + dimension_box[2],base_seccion + dimension_box[0],base_seccion + dimension_box[0] + dimension_box[2],base_seccion + dimension_box[0] + dimension_box[1],base_seccion + dimension_box[0] + dimension_box[1] + dimension_box[2]];
-
 //Creamos los eventos para cada una de las partes.
-//rgb(158,158,158,0.7)
+
 document.getElementById('Data__Formato--Formacion').onclick = function (){
 
-let state_1 = accordeon(document.getElementById("Data__Formacion-inf"),dimension_box[0]);
-changecolor(document.getElementById('Data__Formato--Formacion'),"rgb(158, 158, 158,0.7)",state_1);
-rotateImg(document.getElementById('Data--img-1'),state_1);
+state_button[0] = accordeon(document.getElementById("Data__Formacion-inf"),dimension_box[0]);
+changecolor(document.getElementById('Data__Formato--Formacion'),"rgb(158, 158, 158,0.7)",state_button[0]);
+rotateImg(document.getElementById('Data--img-1'),state_button[0]);
 
 }
 
 document.getElementById('Data__Formato--ProyTrab').onclick = function (){
 
-let state_2 = accordeon(document.getElementById('Data__ProyTrab-inf'),dimension_box[1]);
-changecolor(document.getElementById('Data__Formato--ProyTrab'),"rgb(158, 158, 158,0.7)",state_2);
-rotateImg(document.getElementById('Data--img-2'),state_2);
+state_button[1] = accordeon(document.getElementById('Data__ProyTrab-inf'),dimension_box[1]);
+changecolor(document.getElementById('Data__Formato--ProyTrab'),"rgb(158, 158, 158,0.7)",state_button[1]);
+rotateImg(document.getElementById('Data--img-2'),state_button[1]);
 
 }
 
 document.getElementById('Data__Formato--ManejSoft').onclick = function (){
 
-let state_3 = accordeon(document.getElementById('Data__ManejSoft-inf'),dimension_box[2]);
-changecolor(document.getElementById('Data__Formato--ManejSoft'),"rgb(158, 158, 158,0.7)",state_3);
-rotateImg(document.getElementById('Data--img-3'),state_3);
+state_button[2] = accordeon(document.getElementById('Data__ManejSoft-inf'),dimension_box[2]);
+changecolor(document.getElementById('Data__Formato--ManejSoft'),"rgb(158, 158, 158,0.7)",state_button[2]);
+rotateImg(document.getElementById('Data--img-3'),state_button[2]);
 
 }

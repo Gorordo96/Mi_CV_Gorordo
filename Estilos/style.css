@@ -214,6 +214,11 @@ transition:width 0.3s, height 0.3s;
   text-align: center;
 }
 
+.Data-section-multimedia{
+  display: inline-flex;
+  width:100%;
+}
+
 .Data-section-column-row-img {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -279,6 +284,12 @@ font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
 }
+
+.Data-section-column-Row{
+  display: inline-flex;
+  width:100%;
+}
+
 .ManejSoft-inf-img_dim{
   width: 4em;
   height: 4em;
@@ -310,9 +321,6 @@ font-size: 1em;
 #Data__Formato--ManejSoft{
   margin-top: 1em;
 }
-
-
-
 
 .footer{
   margin-top: 5em;

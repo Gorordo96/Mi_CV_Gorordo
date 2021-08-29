@@ -6,9 +6,11 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Pagina personal (Curriculum Vitae)">
 		<meta name="author" content="Lucas Gorordo">
-		<link rel="icon" href="/Mi_CV_Gorordo/Img/cv.ico">
+		<link rel="icon" href="Img/cv.ico">
 		<link rel="stylesheet" type="text/css" href="/Mi_CV_Gorordo/Estilos/normalize.css">
 		<link rel="stylesheet" type="text/css" href="/Mi_CV_Gorordo/Estilos/style.css">
+		<link rel="stylesheet" type="text/css" href="/Mi_CV_Gorordo/Estilos/style_min.css">
+		<meta name="viewport" content="initial-scale=1, width=device-width">
 	</head>
 <!-- Body = Estructura visible de la pagina -->
 	<body id="pag" class="pag">
@@ -69,28 +71,28 @@
 				<div id="Data__ProyTrab-inf"class="Data-inf">
 					<div class="Data-section-column">
 							<h3 class="Data-section-title-2">2021 Pasantias y practicas profesionales en Ascentio Technologies S.A.</h3>
-							<div style="display: inline-flex; width:100%;" >
+							<div class="Data-section-multimedia" >
 								<img class="Data-section-column-row-img" src="/Mi_CV_Gorordo/Img/Trabajo-Ascentio.jpg" loading="lazy" alt="Trabajo en Ascentio">
 								<iframe class="Data-section-column-row-Video" src="https://www.youtube.com/embed/8P0K00QWA0A" loading="lazy" title="Ascentio Techologies S.A" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<h3 class="Data-section-title-2">2019 - 2021 Ayudantia de segunda dentro del departamento de Telecomunicaciones en la UNRC, para las asignaturas "SISTEMAS Y SEÑALES 1" y "SISTEMAS Y SEÑALES 2"</h3>
 							<h3 class="Data-section-title-2">2019 Colaborador en curso de capacitacion "Primeros pasos de programacion utilizando un entorno arduino" destinado a docentes de nivel medio y alumnos de 4to,5to y 6to grado del nivel primario del instituto privado Galileo Galilei, de la ciudad de Río Cuarto</h3>
-							<div style="display: inline-flex; width:100%;" >
+							<div class="Data-section-multimedia" >
 								<img class="Data-section-column-row-img" src="/Mi_CV_Gorordo/Img/Trabajo-Colegio.jpg" loading="lazy" alt="Trabajo en Galileo Galilei">
 								<video class="Data-section-column-row-Video" src="/Mi_CV_Gorordo/Video/Video-Galileo.mp4" loading="lazy" title="Curso de programacion Arduino" controls>
 							</div>
 							<h3 class="Data-section-title-2">2019 Colaborador en curso de capacitacion "Primeros pasos de programacion utilizando un entorno arduino" llevado a cabo en la UNRC y destinado a estudiantes de segundo año de la carrera Ingeniería en Telecomunicaciones.</h3>
-							<div style="display: inline-flex; width:100%;" >
+							<div class="Data-section-multimedia" >
 								<img class="Data-section-column-row-img" src="/Mi_CV_Gorordo/Img/Imagen-Grupo-GSTR.jpg" loading="lazy" alt="Trabajo UNRC - Curso Arduino">
 								<iframe class="Data-section-column-row-Video" src="https://www.youtube.com/embed/sNoA1kGSI7g" loading="lazy" title="Curso Arduino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<h3 class="Data-section-title-2">2018 Becario del proyecto "Sistema embebido aplicado a la deteccion y alerta de incendios para implementar en sistemas de aviones no tripulados" en la UNRC, a cargo del directo PRIMO, Damián de la facultad de ingeniería. </h3>
-							<div style="display: inline-flex; width:100%;" >
+							<div class="Data-section-multimedia" >
 								<img class="Data-section-column-row-img" src="/Mi_CV_Gorordo/Img/Imagen-deteccion Fuego.jpg" loading="lazy" alt="Deteccion de incendios">
 								<iframe class="Data-section-column-row-Video" src="https://www.youtube.com/embed/Y_7TczgPXkI" loading="lazy" title="Deteccion de Incendios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<h3 class="Data-section-title-2">2017 Integrante del grupo de sistemas de Tiempo Real, dependiente del departamento de Telecomunicaciones de la UNRC.</h3>
-							<div style="display: inline-flex; width:100%;" >
+							<div class="Data-section-multimedia" >
 								<img  class="Data-section-column-row-img" src="/Mi_CV_Gorordo/Img/GSTR.jpg" loading="lazy" alt="Grupo de investigacion">
 								<img  class="Data-section-column-row-Video" src="/Mi_CV_Gorordo/Img/GSTR-Logo.jpg" loading="lazy" alt="GSTR Video" >
 							</div>
@@ -106,7 +108,7 @@
 				<!-- Manejo de software -->
 				<div id="Data__ManejSoft-inf" class="Data-inf">
 					<div class="Data-section-column">
-						<div style="display: inline-flex; width:100%;" >
+						<div class="Data-section-column-Row" >
 							<div class="ManejSoft-inf-img">
 								<img class="ManejSoft-inf-img_dim" src="/Mi_CV_Gorordo/Img/Logo-Matlab.jpg" loading="lazy" alt="Matlab">Matlab
 							</div>
@@ -124,7 +126,7 @@
 							</div>
 						</div>
 
-						<div style="display: inline-flex; width:100%;" >
+						<div class="Data-section-column-Row" >
 							<div class="ManejSoft-inf-img">
 								<img class="ManejSoft-inf-img_dim" src="/Mi_CV_Gorordo/Img/Logo-Docker.png" loading="lazy" alt="Docker">Docker
 							</div>
@@ -149,10 +151,10 @@
 		</div>
 		<!-- Seccion de Footer -->
 		<div id="foot"class="footer">
-			<h4 class="footer-text" >Copyright&copy; 2021 - Diseño y desarrollo con <img class="presentacion__part-2--img"src="/Mi_CV_Gorordo/Img/Logo-Amor.png" alt="amor">por Lucas Gorordo </h4>
+			<h4 class="footer-text" >Copyright&copy; 2021 - Diseño y desarrollo con <img class="presentacion__part-2--img"src="Img/Logo-Amor.png" alt="amor">por Lucas Gorordo </h4>
 		</div>
 
-<script type="text/javascript" src="/Mi_CV_Gorordo/Script/codigo.js"></script>
+<script type="text/javascript" src="Script/codigo.js"></script>
 	</body>
 
 </html>
